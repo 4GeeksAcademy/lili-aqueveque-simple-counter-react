@@ -1,26 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+const Counter = () => {
+    const [renderFooter, setRenderFooter] = useState(false);
+	
+    //se ejecuta al cargar mi componente
+    useEffect(() => {
+        console.log('render');
 
-//create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+        setRenderFooter(true);
+
+    }, []) //Empty dependency array for the useEffect only to work once (when page is loaded)
+    const counterStyle = {
+        paddingTop: "30px",
+        paddingBottom: "5px",
+        color: "white",
+        marginTop: "10px",
+        background: "black",
+    }
+    return (
+        <>
+        <div class="text-center time-container" style={counterStyle}>
+            <div className="clock"><i class="fa-regular fa-clock fa-flip-horizontal"></i></div>
+            <div className="firstSlot">First slot</div>
+            <div className="secondSlot">Second slot</div>
+            <div className="thirdSlot">Third slot</div>
+            <div className="fourthSlot">Fourth slot</div>
+            <div className="fifthSlot">Fifth slot</div>
+            <div className="sixthSlot">Sixth slot</div>
+        </div>
+        </>
+    )
 };
 
-export default Home;
+export default Counter;

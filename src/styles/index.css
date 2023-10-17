@@ -1,3 +1,27 @@
+.time-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.time-container div {
+    /* This is styling all the children of time-container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    background-color: rgb(0, 0, 0);
+    background-image: url("https://media.istockphoto.com/id/507912374/nl/foto/pure-black-sand-texture.jpg?s=612x612&w=0&k=20&c=ExqKHQZ-IISYB1OC4cU0Tz7y-ucIsos1rgOpG945KV0=");
+    background-size: cover;
+    width: 6em;
+    height: 9em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(61, 61, 61);
+    font-size: 15px;
+}
 
 /* 
 
