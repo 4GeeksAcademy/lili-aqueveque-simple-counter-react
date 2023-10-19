@@ -16,21 +16,11 @@
     background-color: rgb(0, 0, 0);
     background-image: url("https://media.istockphoto.com/id/507912374/nl/foto/pure-black-sand-texture.jpg?s=612x612&w=0&k=20&c=ExqKHQZ-IISYB1OC4cU0Tz7y-ucIsos1rgOpG945KV0=");
     background-size: cover;
-    width: 6em;
-    height: 9em;
+    width: 96px;
+    height: 144px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgb(61, 61, 61);
-    font-size: 15px;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
