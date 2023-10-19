@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Counter = () => {
-    const [second, setSecond] = useState(0);
+    const [second, setSecond] = useState(0); //Change useState to 10000 or 100000 to make sure it works
 
     useEffect(() => {
         // Interval that increments the second state every 1000ms (1 second)
@@ -23,8 +23,8 @@ const Counter = () => {
     }
 
     // Convert the number to string and split into individual characters
-    const digitArray = second.toString().padStart(6, "0").split("");
-
+    const digitArray = second.toString().padStart(6, "0").split(""); //padStart: string.padStart(targetLength, padString);
+    // (padString es con que se rellenara el string mientras no tenga valor)
     return (
         <>
             <div className="text-center time-container" style={counterStyle}>
