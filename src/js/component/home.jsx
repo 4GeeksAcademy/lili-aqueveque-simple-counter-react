@@ -39,8 +39,10 @@ const Counter = () => {
 
 export default Counter;
 
-//Pseudocode:
-/*Define a functional component called Counter:
+///////////Pseudocode:///////////
+
+/*
+Define a functional component called Counter:
     Initialize a state variable "second" with initial value 0
     Define a useEffect hook with an empty dependency array:
         Inside the useEffect:
@@ -55,10 +57,9 @@ export default Counter;
     Split the padded string into individual characters and store them in an array "digitArray"
 
     Render the following JSX structure:
-        <div> <!-- Start of outer div with className "text-center time-container" and styles from "counterStyle" -->
+        <div> <!-- Start of outer (container) div with and styles from "counterStyle" -->
             <div> <!-- Clock icon div with className "clock" and flipped horizontal icon -->
                 <i> <!-- Font Awesome clock icon -->
-                    <!-- "far fa-clock fa-flip-horizontal" icon classes -->
                 </i>
             </div>
             <!-- Iterate over each character in "digitArray" and render a div with className "digitSlot" -->
